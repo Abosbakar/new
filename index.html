@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Dünyanın en güzel kızı siz misiniz Tuğçe hanım?</title>
+  <title>Numaranızı Verir misiniz Tuğçe hanım? 😊</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,7 +21,6 @@
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
       position: relative;
-      width: 300px;
     }
 
     h2 {
@@ -53,31 +52,31 @@
       position: absolute;
     }
 
-    #message {
-      font-size: 22px;
-      color: #28a745;
-      display: none;
+    iframe {
       margin-top: 20px;
-      font-weight: bold;
+      width: 100%;
+      height: 500px;
+      border: none;
+      display: none;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <h2>Dünyanın en güzel kızı siz misiniz Tuğçe hanım? 😇</h2>
+  <h2>Numaranızı vermek ister misiniz Tuğçe hanım? 😇</h2>
   <button id="yesBtn" class="btn">Evet</button>
   <button id="noBtn" class="btn" style="top: 100px; left: 50%;">Hayır</button>
-  <div id="message">✅ Doğru Bildiniz! 😍</div>
+  <iframe id="formFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSd152Y9eyjPXqjUQ_X6lkD0H0EQKLYkk7RSkETZICZsBzaW2w/viewform?embedded=true"></iframe>
 </div>
 
 <script>
   const yesBtn = document.getElementById('yesBtn');
   const noBtn = document.getElementById('noBtn');
-  const message = document.getElementById('message');
+  const formFrame = document.getElementById('formFrame');
 
   yesBtn.addEventListener('click', () => {
-    message.style.display = 'block';
+    formFrame.style.display = 'block';
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
   });
